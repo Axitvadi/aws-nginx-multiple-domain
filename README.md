@@ -65,7 +65,7 @@ Now to host our node.js apps we need an **EC2 virtual machine or instance**. So 
 
 ### Note:  Right now I am having 1 instances and other services running so it is displaying there. But if you are new then there are 0 displaying.
 
-![AWS EC2 instance image][aws ss-2](https://user-images.githubusercontent.com/98725622/221651787-4f2b670f-2e53-4ec3-b840-bb2f153ffbd7.png)
+![AWS EC2 instance image](https://user-images.githubusercontent.com/98725622/221651787-4f2b670f-2e53-4ec3-b840-bb2f153ffbd7.png)
 
 4. After clicking on Running Instances you’ll see a Launch Instance button there.
 
