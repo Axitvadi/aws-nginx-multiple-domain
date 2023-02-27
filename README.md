@@ -70,7 +70,7 @@ Now to host our node.js apps we need an **EC2 virtual machine or instance**. So 
 
 5. Now, click on the Launch Instance button. After clicking you will see a page like this which shows the type of OS with the config you want in your machine e.i. We are going to use a Ubuntu Server 22.04 LTS 64-bit (x86).
 
-(https://user-images.githubusercontent.com/98725622/221650590-5aa7487f-983a-4155-a48e-e453b7bd769a.png)
+![AWS Launch instance image]!(https://user-images.githubusercontent.com/98725622/221650590-5aa7487f-983a-4155-a48e-e453b7bd769a.png)
 
 ![AWS console image](./assets/instance-type.png)
 
