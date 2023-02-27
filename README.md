@@ -58,7 +58,8 @@ Now to host our node.js apps we need an **EC2 virtual machine or instance**. So 
 1. Log in to [AWS](https://aws.amazon.com) and click on the Sign in to the Console. Open your AWS console.
 2. Click on EC2 in the All Services section.
 
-![AWS console image](./assets/aws.ss.png)
+![AWS console image](https://user-images.githubusercontent.com/98725622/221651498-c929493c-92b0-49d3-807e-c4ea7b948f33.png)
+
 
 3. You will see a screen like below. Where all the currently running instances can be shown. Now click on the Running instances.
 
