@@ -91,3 +91,108 @@ Now to host our node.js apps we need an **EC2 virtual machine or instance**. So 
 
 9. After instance initialization, select the instance and click on connect. Then we can easily connect to our instance in browser, on Mac terminal by .pem file, and on Windows by using putty.
 
+### Note: Keep your key in a secure place and don’t share your key with someone else not working with you on this.
+
+Your key must not be publicly viewable for SSH to work. Use the below command if needed. Always provide a correct path for the key. In below example, I am in the same directory in which my pen file or my key is present.
+
+chmod 400 path-for-key-here
+For Example:
+chmod 400 ./node-key.pem
+
+10. 9. Now click on the instance id ( In my case i-0aaa83ad977631403 ) which appears in the green block above. You will be redirected to the instances page and now you can see your instance is up and running.
+
+![AWS all instances](./assets/launch-log.png)
+
+## SSH into our instance
+
+SSH means Secure Shell. The purpose of doing SSH to our instance is we want to access our server through a secure manner which you can access by using your terminal/cmd or using other Softwares like Putty. Now, depending upon your Operating System you can access your server in different manners.
+
+### For Windows
+
+You can use Putty, etc.
+
+## For Mac / Linux
+
+- Open your terminal
+- Go to AWS EC2 instances section and choose any instance.
+
+![Public DNS ]
+
+- Copy the Public IP and write the below command in your terminal with your instance public IP which you have copied.
+
+Note: Please make sure your private key location is correct in your local PC. Which you have downloaded in the previous step. In below example, I am in the same directory in which the node-key.pem is present.
+
+ssh -i "private-key-location" ubuntu@public-ip
+For example
+ssh -i "./node-key.pem" ubuntu@ec2-54-161-91-174.compute-1.amazonaws.com
+
+## In windows connect with Putty
+
+download and Install putty then open it.
+
+For generate .ppk file from .pem file that are downloaded from aws refer this link
+
+Please refer to the following link for instructions on generating a .ppk file from a .pem file that was downloaded from Amazon Web Services.
+
+https://asf.alaska.edu/how-to/data-recipes/connect-to-your-ec2-instance-using-putty-v1-1/
+
+After generate .ppk file follow this instruction for connect your aws instance with putty
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html
+
+![Putty server connection ]
+
+## Install Node.js and Git
+### Installing Node :
+
+To run a Node.js app we require Node.js to be installed on our instance. So we will install all the required dependencies which can be used to install Node.js on our ubuntu instance.
+
+There are many ways to install node on our instance:
+
+Installing Node.js and npm from NodeSource
+
+First, of all Enable the NodeSource repository by running the following curl command as a sudo user on your instance using the terminal:
+
+Here is the full documentation of how to install node.js in Ubuntu. You can install node.js on your server by following these instructions.
+
+https://github.com/nodesource/distributions/blob/master/README.md
+
+OR
+
+https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04
+
+OR
+
+Run this command to install node.js
+
+curl -fsSL https://deb.nodesource.com/setup_19.x | sudo -E bash - &&\
+sudo apt-get install -y nodejs
+
+Here you can change node version by providing setup number like setup_14.x in above command
+
+Now, Verify that the Node.js and npm were successfully installed by printing their versions:
+
+$ node --version
+Output: v19.7.0
+$ npm --version
+Output: 9.5.0
+
+![Node version check]
+
+## Installing Git :
+
+To get our code on our EC2 Instance we need git. So, the below steps will define how to install Git on our EC2 instance.
+
+To refresh all the packages run
+
+$ sudo apt update -y
+
+![Git install image]
+
+### Clone repository from GitHub
+
+Now, we have Node.js and Git installed on our EC2 Instance. Now, we need the codebase on our ec2 instance. So, we will clone our repositories using the username and password from services like Github, Bitbucket, Gitlab, etc. I am using Github here.
+
+Go to Github.
+Navigate to your repository which you want to clone.
+Click on Code.
