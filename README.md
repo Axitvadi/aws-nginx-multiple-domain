@@ -101,7 +101,7 @@ chmod 400 ./node-key.pem
 
 10. 9. Now click on the instance id ( In my case i-0aaa83ad977631403 ) which appears in the green block above. You will be redirected to the instances page and now you can see your instance is up and running.
 
-![AWS all instances](./assets/launch-log.png)
+![AWS all instances](./assets/all-instances.png)
 
 ## SSH into our instance
 
@@ -116,7 +116,7 @@ You can use Putty, etc.
 - Open your terminal
 - Go to AWS EC2 instances section and choose any instance.
 
-![Public DNS ]
+![Public DNS](./assets/public_dns.png)
 
 - Copy the Public IP and write the below command in your terminal with your instance public IP which you have copied.
 
@@ -140,7 +140,7 @@ After generate .ppk file follow this instruction for connect your aws instance w
 
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html
 
-![Putty server connection ]
+![Putty server connection ](./assets/connect-server-with-putty.png)
 
 ## Install Node.js and Git
 ### Installing Node :
@@ -177,7 +177,7 @@ Output: v19.7.0
 $ npm --version
 Output: 9.5.0
 
-![Node version check]
+![Node version check](./assets/node-version-check.png)
 
 ## Installing Git :
 
@@ -187,7 +187,7 @@ To refresh all the packages run
 
 $ sudo apt update -y
 
-![Git install image]
+![Git install image](./assets/git-install.png)
 
 ### Clone repository from GitHub
 
