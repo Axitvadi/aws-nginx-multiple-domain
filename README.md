@@ -174,6 +174,7 @@ Now, Verify that the Node.js and npm were successfully installed by printing the
 
 $ node --version
 Output: v19.7.0
+
 $ npm --version
 Output: 9.5.0
 
