@@ -173,9 +173,11 @@ Here you can change node version by providing setup number like setup_14.x in ab
 Now, Verify that the Node.js and npm were successfully installed by printing their versions:
 
 $ node --version
+
 Output: v19.7.0
 
 $ npm --version
+
 Output: 9.5.0
 
 ![Node version check](./assets/node-version-check.png)
