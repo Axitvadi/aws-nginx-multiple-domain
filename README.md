@@ -79,11 +79,10 @@ Now to host our node.js apps we need an **EC2 virtual machine or instance**. So 
 6. create new key pair if you are not already have. give a name of key and select format of key if you are windows user and connect your server using putty then select .ppk type or if you wish to use with open ssh then choose .pem type.
 
 ![key-pair](https://github.com/Axitvadi/aws-nginx-multiple-domain/assets/98725622/6471263e-8005-4b1f-8daa-8bb9a65f3891)
-s/key-pair.png)
 
 6. In advance details select Shutdown behavior to stop
 
-![AWS console image](./assets/shut-down-behavior.png)
+![shut-down-behavior](https://github.com/Axitvadi/aws-nginx-multiple-domain/assets/98725622/a8c83b78-1ad2-49a7-99ca-a1ca14aad173)
 
 7. click on launch instance button
 
