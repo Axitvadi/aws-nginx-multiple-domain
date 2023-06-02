@@ -86,7 +86,7 @@ Now to host our node.js apps we need an **EC2 virtual machine or instance**. So 
 
 7. click on launch instance button
 
-![AWS console image](./assets/launch-log.png)
+![AWS console image](https://github.com/Axitvadi/aws-nginx-multiple-domain/assets/98725622/cce1b6ce-0fd3-49ec-930c-dbc592551e67)
 
 8. Now we successfully launch our instance and click on  view all instances.
 
